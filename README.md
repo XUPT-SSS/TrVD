@@ -9,18 +9,21 @@ each sub-tree can thus be effectively collected with a carefully designed tree-s
 encoder is utilized to summarize them up into a dense vector, with learning additional long-range semantics relationships among
 the sub-trees and distilling the semantics that are more informative to pin down the vulnerable patterns.
 
-##Source
-###Step1:Code normalization
+## Source
+
+### Step1:Code normalization
 Normalize the code with normalization.py
 ```
 python ./normalization.py
 ```
-###step2: AST decomposition
+
+### step2: AST decomposition 
 Train word2vec embedding and Decompose AST with our algotithm.
 ```
 python pipeline.py
 ```
-###Step3: Train TrVD vulnerability detector
+
+### Step3: Train TrVD vulnerability detector
 ```
 python train.py
 ```
