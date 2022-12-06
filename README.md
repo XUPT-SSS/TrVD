@@ -1,4 +1,4 @@
-### TrVD: Deep Semantic Extraction via AST Decomposition for Vulnerability Detection
+# TrVD: Deep Semantic Extraction via AST Decomposition for Vulnerability Detection
 The explosive growth of software vulnerabilities poses a serious threat to the system security and has become one of the urgent
 problems of the day. Yet, existing vulnerability detection methods show limitations in reaching the balance between the detection ac-
 curacy, efficiency and applicability. To this end, this paper proposes TrVD (abstract syntax Tree decomposition based Vulnerability
