@@ -32,3 +32,8 @@ python ./pipeline.py
 ```
 python ./train.py
 ```
+
+### Step4: Evaluate our model
+```
+python ./evaluation.py
+```
