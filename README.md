@@ -9,6 +9,9 @@ each sub-tree can thus be effectively collected with a carefully designed tree-s
 encoder is utilized to summarize them up into a dense vector, with learning additional long-range semantics relationships among
 the sub-trees and distilling the semantics that are more informative to pin down the vulnerable patterns.
 
+# Dataset
+We collect a dataset from Software Assurance Reference Dataset (SARD) ( https://samate.nist.gov/SRD/index.php) which is a project maintained by National Institute of Standards and Technology (NIST) (https://www.nist.gov/). SARD contains a large number of production, synthetic, and academic security flaws or vulnerabilities (i.e., bad functions) and many good functions. In our paper, we focus on detecting vulnerability in C/C++, therefore, we only select functions written in C/C++ in SARD. Data obtained from SARD consists of 98,181 vulnerable functions and 166,641 non-vulnerable functions.
+
 ## Source
 
 ### Step1:Code normalization
@@ -18,7 +21,6 @@ python ./normalization.py
 ```
 
 ### step2: AST decomposition 
-Train word2vec embedding and Decompose AST with our algotithm.
 ```
 python pipeline.py
 ```
