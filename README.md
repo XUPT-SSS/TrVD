@@ -22,10 +22,10 @@ python ./normalization.py
 
 ### step2: AST decomposition 
 ```
-python pipeline.py
+python ./pipeline.py
 ```
 
 ### Step3: Train TrVD vulnerability detector
 ```
-python train.py
+python ./train.py
 ```
