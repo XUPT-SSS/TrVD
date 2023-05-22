@@ -3,7 +3,8 @@ The explosive growth of software vulnerabilities poses a serious threat to the s
 of a code fragment into ordered sub-trees of restricted sizes and depths with a novel decomposition algorithm. The semantics of each sub-tree can thus be effectively collected with a carefully designed tree-structured neural network. Finally, a Transformer-style encoder is utilized to summarize them up into a dense vector, with learning additional long-range semantics relationships among the sub-trees and distilling the semantics that are more informative to pin down the vulnerable patterns.
 
 ## Design of TrVD
-![image](https://github.com/mx-info/imgs/blob/main/trvd_frame.bmp)
+![image](https://github.com/XUPT-SSS/TrVD/assets/118888372/2f02f149-6674-41d4-b727-75990972899a)
+
 
 ## Dataset
 We collect a dataset from Software Assurance Reference Dataset (SARD) ( https://samate.nist.gov/SRD/index.php) which is a project maintained by National Institute of Standards and Technology (NIST) (https://www.nist.gov/). SARD contains a large number of production, synthetic, and academic security flaws or vulnerabilities (i.e., bad functions) and many good functions. In our paper, we focus on detecting vulnerability in C/C++, therefore, we only select functions written in C/C++ in SARD. Data obtained from SARD consists of 98,181 vulnerable functions and 166,641 non-vulnerable functions.
